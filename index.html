@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gra Miejska: Płock - Trasa Historyczna</title>
+    <!-- Styl główny -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Biblioteka Leaflet CSS do obsługi mapy -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+</head>
+<body>
+
+    <!-- Górny nagłówek serwisu -->
+    <header class="app-header">
+        <div class="header-left">
+            <div class="flag-box">EU</div>
+            <div class="header-title-group">
+                <span class="subtitle">Gra Miejska / Jagiellonka</span>
+                <h1>Płock: Czerwiec 76</h1>
+            </div>
+        </div>
+        <div class="header-right">
+            <span class="badge-free">Aktywna Gra</span>
+            <span class="share-btn">Udostępnij 🔗</span>
+        </div>
+    </header>
+
+    <!-- Główny układ aplikacji (3 kolumny) -->
+    <main class="app-container">
+        
+        <!-- KOLUMNA 1: Lista punktów i zadań -->
+        <section class="sidebar-list" id="sidebar-list">
+            <div class="sidebar-header">
+                <h2>Lista Zadań</h2>
+            </div>
+            <div class="points-scroll" id="points-scroll">
+                <!-- Punkty generowane dynamicznie przez JavaScript -->
+            </div>
+        </section>
+
+        <!-- KOLUMNA 2: Panel szczegółów aktywnego zadania -->
+        <section class="task-panel" id="task-panel">
+            <div class="task-content" id="task-content">
+                <!-- Treść zadania ładowana dynamicznie -->
+            </div>
+        </section>
+
+        <!-- KOLUMNA 3: Mapa Płocka -->
+        <section class="map-section">
+            <div id="map"></div>
+        </section>
+
+    </main>
+
+    <!-- Stopka -->
+    <footer class="app-footer">
+        <span>Projekt Open Source (Licencja MIT)</span>
+        <span class="footer-school">Liceum Ogólnokształcące z Oddziałami Dwujęzycznymi im. Władysława Jagiełły</span>
+    </footer>
+
+    <!-- Skrypt Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- Główny skrypt aplikacji -->
+    <script src="script.js"></script>
+</body>
+</html>
